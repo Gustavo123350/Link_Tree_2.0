@@ -1,0 +1,99 @@
+@keyframes fadeIm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360dg);
+  }
+}
+@keyframes color-titolo {
+  0% {
+    color: deeppink;
+  }
+  25% {
+    color: rgba(0, 0, 255, 0.925);
+  }
+  50% {
+    color: orangered
+  }
+  75% {
+    color: aqua;
+  }
+  100% {
+    color: whitesmoke;
+  }
+}
+body {
+  background-color: darkgreen;
+}
+.App {
+  text-align: center;
+  margin: 20px;
+  animation: faadeIn is ease-in;
+}
+
+.link-list {
+  margin: 20px;
+}
+
+.link-button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: blue;
+  color: wheat;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-button:hover {
+  background-color:rgb(42, 180, 180) ;
+  transform: scale(1.05);
+}
+
+.add-link-form input {
+  margin: 5px;
+  padding: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.add-link-form input:focus {
+  border-color: #e42a96 ;
+}
+.add-link-form button {
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.add-link-form button:hover {
+  background-color:blueviolet ;
+  transform: scale(1.05);
+}
+
+.gif-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 20px 0;
+}
+
+.circular-gif {
+  width: 150px;
+  height: 150 px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: rotate 5s linear infinite;
+}
+
+.titulo-animado {
+  animation:  color-titolo 4s infinite;
+}
